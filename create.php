@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student database</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
     <h2>Student Form</h2>
-    <form action="" method="post">
+    <form  action="" method="post">
         <fieldset>
             <legend>Student Information: </legend>
             Name: <br>
