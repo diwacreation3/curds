@@ -40,7 +40,7 @@ if(isset($_POST['submit']))
     if($result == TRUE)
     {
         echo "New Record Create Sucessfully. ";
-        header('Location: View-student.php');
+        header('Location: view-student.php');
     } else{
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
