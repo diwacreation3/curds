@@ -20,4 +20,10 @@ CREATE TABLE students (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
+## screenShots
 
+![](img/create.png)
+
+![](img/update.png)
+
+![](img/view.png)
