@@ -10,7 +10,7 @@ include "config/config.php";
 <body>
 
     <div class="container">
-        <h2>Student Details</h2>
+        <h2>Student Details</h2> <a class="btn btn-info" href="create.php">Back</a>
 <table class="table">
     <thead>
         <tr>
@@ -34,6 +34,7 @@ include "config/config.php";
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['age']; ?></td>
                     <td><?php echo $row['email']; ?></td>
+        
                     <td><a class="btn btn-info" href="update-student.php?id=<?php echo $row['id']; ?>">Edit</a>
                      &nbsp;
                      <a class="btn btn-danger" href="delete-student.php?id=<?php echo $row['id']; ?>">Delete</a>

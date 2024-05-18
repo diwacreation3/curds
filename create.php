@@ -9,7 +9,7 @@
 <body>
     
     <div class="container-fluid">
-      <h2>Student Form</h2>  
+      <h2>Student </h2>  <a class="btn btn-info" href="view-student.php">View</a>
     <form  action="" method="post">
        <div class="form-group">
         <label for="InputName">Name</label>

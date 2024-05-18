@@ -29,25 +29,41 @@ if (isset($_GET['id'])) {
         }
     ?>
 
-        <h2>Student details Update Form</h2>
-        <form action="" method="post">
-          <fieldset>
-            <legend>Personal information:</legend>
-            Name:<br>
-            <input type="text" name="name" value="<?php echo $name; ?>">
-            <input type="hidden" name="stu_id" value="<?php echo $id; ?>">
-            <br>
-            Age:<br>
-            <input type="text" name="age" value="<?php echo $age; ?>">
-            <br>
-            Email:<br>
-            <input type="email" name="email" value="<?php echo $email; ?>">
-            <br><br>
-            <input type="submit" value="Update" name="update">
-          </fieldset>
-        </form>
-        </body>
-        </html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Update data</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    </head>
+    <body>
+    <div class="container-fluid">
+      <h2>Update Data</h2>  
+    <form  action="" method="post">
+       <div class="form-group">
+        <label for="InputName">Name</label>
+        <input type="text" class="form-control" name="name" value="<?php echo $name; ?>">
+        <input type="hidden" name="stu_id" value="<?php echo $id; ?>">
+       </div>
+
+       <div class="form-group">
+        <label > Age</label>
+        <input type="text" name="age" class="form-control" value="<?php echo $age; ?>">
+       </div>
+
+       <div class="form-group">
+        <label>Email address</label>
+        <input type="email" name="email" class="form-control" aria-describedby="emailHelp" value="<?php echo $email; ?>">
+        <small id="emailHelp" class="form-text text-muted">Your email is stored in database</small>
+       </div>
+       <button type="submit" name="update" class="btn btn-primary">Update</button>
+    </form>
+</div>
+    </body>
+    </html>
+
 
 
     <?php
