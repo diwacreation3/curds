@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
-    <h2>Student Form</h2>
+    
+    <div class="container-fluid">
+      <h2>Student Form</h2>  
     <form  action="" method="post">
-        <fieldset>
-            <legend>Student Information: </legend>
-            Name: <br>
-            <input type="text" name="name" > <br>
-            Age: <br>
-            <input type="text" name="age" > <br>
-            Email: <br>
-            <input type="email" name="email"> <br>
-            <br><br>
-            <input type="submit" name="submit" value="Submit">
-        </fieldset>
+       <div class="form-group">
+        <label for="InputName">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Enter your name">
+       </div>
+
+       <div class="form-group">
+        <label > Age</label>
+        <input type="text" name="age" class="form-control" placeholder="Your age">
+       </div>
+
+       <div class="form-group">
+        <label>Email address</label>
+        <input type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your Email">
+        <small id="emailHelp" class="form-text text-muted">Your email is stored in database</small>
+       </div>
+       <button type="submit" name="submit" class="btn btn-primary">Add</button>
     </form>
+</div>
 </body>
 </html>
 
